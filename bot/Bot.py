@@ -3,6 +3,8 @@ import sched
 import time
 import tweepy
 
+# Credentials removed from Reddit & Twitter OAuth.
+# I plan to make the program fetch them from a file in the future that you can customize.
 
 class PeriodicScheduler(object):
     def __init__(self):
@@ -21,8 +23,6 @@ recent_tweet = ''
 
 def periodic_event():
     try:
-		# Credentials removed from Reddit & Twitter OAuth.
-		# I plan to make the program fetch them from a file in the future that you can customize.
         reddit = praw.Reddit(client_id='-',
                              client_secret='-', password='-',
                              user_agent='VyfeBot', username='VyfeBot')
